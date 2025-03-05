@@ -1,6 +1,9 @@
 import random
+import pyfiglet
+ascii_banner = pyfiglet.figlet_format("MindTheDigit", justify="center", width=100)
 
 def guessTheNumber(x):
+    print(ascii_banner)
     randomNumber = random.randint(1,x)
     guess = 0
     while guess != randomNumber:
